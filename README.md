@@ -1,162 +1,180 @@
-# Your Name - MERN Stack Developer Portfolio
+# Personal Portfolio Website
 
-A modern, responsive portfolio website built with React and Vite, showcasing my skills and projects as a MERN Stack Developer with a focus on backend development.
+A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 
 ## 🚀 Features
 
-- **Modern Design**: Clean, professional design with smooth animations
-- **Responsive Layout**: Optimized for all devices and screen sizes
-- **MERN Stack Focus**: Emphasizes backend development skills within the MERN ecosystem
-- **Interactive Elements**: Smooth scrolling navigation and hover effects
-- **SEO Optimized**: Meta tags and structured content for better search visibility
-- **Fast Performance**: Built with Vite for optimal loading speeds
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- **Modern UI** - Beautiful glassmorphism effects and gradient backgrounds
+- **Smooth Animations** - Animated background elements and smooth scrolling
+- **Component-Based** - Well-organized React components for maintainability
+- **Fast Performance** - Built with Vite for optimal development and build times
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 18, Vite, Tailwind CSS
-- **Styling**: Tailwind CSS with custom animations
-- **Icons**: React Icons
-- **Deployment**: GitHub Pages (or your preferred hosting)
+- **React 19** - Latest React with hooks
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **GitHub Pages** - Free hosting and deployment
 
 ## 📁 Project Structure
 
 ```
-ayush392.github.io/
-├── public/
-│   ├── favicon.svg          # Custom portfolio favicon
-│   └── vite.svg
-├── src/
-│   ├── components/          # React components
-│   │   ├── Header.jsx
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── Skills.jsx
-│   │   ├── Projects.jsx
-│   │   └── Contact.jsx
-│   ├── data/
-│   │   └── portfolio.json   # Portfolio content data
-│   ├── assets/              # Images and static assets
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── index.html
-├── package.json
-└── README.md
+src/
+├── components/          # React components
+│   ├── Navigation.jsx   # Navigation bar
+│   ├── Hero.jsx         # Landing section
+│   ├── About.jsx        # About section
+│   ├── Experience.jsx   # Work experience
+│   ├── Skills.jsx       # Technical skills
+│   ├── Projects.jsx     # Featured projects
+│   ├── Contact.jsx      # Contact form
+│   ├── Footer.jsx       # Footer
+│   └── index.js         # Component exports
+├── data/
+│   └── portfolio.json   # Portfolio data
+├── assets/              # Images and static files
+├── App.jsx              # Main app component
+└── index.css            # Global styles
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (version 16 or higher)
-- npm or yarn package manager
+- Node.js (version 18 or higher)
+- npm or yarn
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/ayush392.github.io.git
-   cd ayush392.github.io
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/ayush392/ayush392.github.io.git
+cd ayush392.github.io
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+2. Install dependencies:
+```bash
+npm install
+```
 
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
+3. Start the development server:
+```bash
+npm run dev
+```
 
-4. **Open your browser**
-   Navigate to `http://localhost:5173` to view the portfolio
+4. Open your browser and visit `http://localhost:5173`
 
-### Building for Production
+## 📝 Customization
 
+### Updating Portfolio Data
+
+Edit `src/data/portfolio.json` to update your personal information:
+
+```json
+{
+  "personal": {
+    "name": "Your Name",
+    "title": "Your Title",
+    "tagline": "Your Tagline",
+    "resume": "Link to your resume",
+    "about": {
+      "paragraph1": "First paragraph about you",
+      "paragraph2": "Second paragraph about you"
+    },
+    "stats": [
+      {
+        "number": "5+",
+        "label": "Years Experience"
+      }
+    ],
+    "services": [
+      {
+        "icon": "💻",
+        "title": "Web Development",
+        "description": "Building modern web applications"
+      }
+    ]
+  },
+  "experience": [...],
+  "skills": [...],
+  "projects": [...],
+  "contact": {...},
+  "social": {...},
+  "socialIcons": {...},
+  "footer": {...}
+}
+```
+
+### Styling
+
+The project uses Tailwind CSS. You can customize colors, fonts, and other styles by modifying the Tailwind classes in the components.
+
+## 🌐 Deployment
+
+### Method 1: GitHub Actions (Recommended)
+
+This project is configured with GitHub Actions for automatic deployment. Simply push your changes to the `main` branch:
+
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
+
+The site will automatically be deployed to `https://ayush392.github.io`
+
+### Method 2: Manual Deployment
+
+1. Build the project:
 ```bash
 npm run build
 ```
 
-The built files will be in the `dist` folder, ready for deployment.
+2. Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
 
-## 📝 Customization
+### Method 3: Manual GitHub Pages Setup
 
-### Updating Content
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" in the sidebar
+3. Select "GitHub Actions" as the source
+4. The workflow will automatically deploy your site
 
-All portfolio content is stored in `src/data/portfolio.json`. You can easily update:
+## 🔧 Available Scripts
 
-- Personal information
-- Skills and technologies
-- Project details
-- Contact information
-- Social media links
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run deploy` - Deploy to GitHub Pages
 
-### Styling
+## 📱 Browser Support
 
-The portfolio uses Tailwind CSS for styling. You can customize:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-- Colors in `tailwind.config.js`
-- Custom styles in `src/index.css`
-- Component-specific styles in individual component files
+## 🤝 Contributing
 
-### Favicon
-
-The custom favicon is located at `public/favicon.svg` and features:
-- MERN stack representation
-- Modern gradient design
-- Tech-focused icons
-
-## 🎨 Design Features
-
-- **Color Scheme**: Professional indigo/cyan gradient theme
-- **Typography**: Clean, readable fonts with proper hierarchy
-- **Animations**: Smooth scroll animations and hover effects
-- **Layout**: Responsive grid system with mobile-first approach
-- **Accessibility**: Proper semantic HTML and ARIA labels
-
-## 📱 Responsive Design
-
-The portfolio is fully responsive and optimized for:
-- Desktop (1200px+)
-- Tablet (768px - 1199px)
-- Mobile (320px - 767px)
-
-## 🔧 Configuration
-
-### Meta Tags
-
-Update the meta tags in `index.html` for:
-- SEO optimization
-- Social media sharing
-- Browser compatibility
-
-### Deployment
-
-The portfolio is ready for deployment on:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static hosting service
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-While this is a personal portfolio, suggestions and improvements are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-
 ## 📞 Contact
 
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
-- **Portfolio**: [Your Portfolio URL]
+- GitHub: [@ayush392](https://github.com/ayush392)
+- Portfolio: [ayush392.github.io](https://ayush392.github.io)
 
 ---
 
-**Built with ❤️ using React, Vite, and Tailwind CSS**
+Made with ❤️ by [Your Name]
