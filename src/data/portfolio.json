@@ -1,0 +1,199 @@
+{
+  "personal": {
+    "name": "Your Name",
+    "title": "MERN Stack Developer",
+    "tagline": "Passionate about building scalable web applications with focus on backend development for innovative product teams",
+    "resume": "https://drive.google.com/file/d/your-resume-id/view?usp=sharing",
+    "avatar": "👨‍💻",
+    "email": "your.email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "Your City, Country",
+    "about": {
+      "paragraph1": "I'm a passionate MERN Stack Developer with strong foundations in building scalable web applications. Currently working at Accenture, I'm eager to transition to a product-based startup where I can contribute to innovative solutions and grow with cutting-edge technologies.",
+      "paragraph2": "I specialize in creating robust, user-centric applications using MongoDB, Express.js, React.js, and Node.js, with a focus on backend development. My experience includes developing RESTful APIs, implementing authentication systems, database design, and building scalable full-stack applications. I also have strong foundations in Data Structures and Algorithms, which helps me write efficient, optimized code and solve complex programming challenges."
+    },
+    "stats": [
+      {
+        "number": "<1",
+        "label": "Year Experience"
+      },
+      {
+        "number": "8+",
+        "label": "Personal Projects"
+      },
+      {
+        "number": "5+",
+        "label": "Technologies Mastered"
+      }
+    ],
+              "services": [
+      {
+        "icon": "⚛️",
+        "title": "React Development",
+        "description": "Building responsive and interactive user interfaces with modern React patterns"
+      },
+      {
+        "icon": "🟢",
+        "title": "Node.js Backend",
+        "description": "Developing scalable APIs and server-side logic with Express.js"
+      },
+      {
+        "icon": "🍃",
+        "title": "MongoDB Database",
+        "description": "Designing efficient database schemas and optimizing queries"
+      },
+      {
+        "icon": "🔐",
+        "title": "Authentication & Security",
+        "description": "Implementing JWT authentication and security best practices"
+      },
+      {
+        "icon": "🧮",
+        "title": "DSA & Problem Solving",
+        "description": "Writing efficient algorithms and optimizing code performance"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "title": "MERN Stack Developer",
+      "company": "Accenture",
+      "duration": "2024 - Present",
+      "description": "Working on client projects and developing web applications using MERN stack technologies. Learning enterprise-level development practices and collaborating with cross-functional teams.",
+      "technologies": ["React", "Node.js", "Express.js", "MongoDB", "JavaScript", "Git", "Agile", "JIRA"],
+      "achievements": [
+        "Contributing to full-stack development for client projects",
+        "Learning enterprise-level MERN stack development practices",
+        "Collaborating with cross-functional teams in an Agile environment",
+        "Gaining experience with large-scale web application development"
+      ]
+    },
+    {
+      "title": "MERN Stack Intern",
+      "company": "Startup Company",
+      "duration": "2023 - 2024",
+      "description": "Internship experience in a startup environment, working on MERN stack projects and learning modern full-stack development practices.",
+      "technologies": ["React", "Node.js", "Express.js", "MongoDB", "JavaScript", "Git", "REST APIs"],
+      "achievements": [
+        "Gained hands-on experience with MERN stack development",
+        "Learned startup culture and fast-paced development environment",
+        "Contributed to full-stack application development",
+        "Developed understanding of MERN stack architecture and best practices"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "skills": ["React.js", "JavaScript (ES6+)", "TypeScript", "HTML5/CSS3", "Redux", "Material-UI", "Tailwind CSS"]
+    },
+    {
+      "category": "Backend",
+      "skills": ["Node.js", "Express.js", "RESTful APIs", "GraphQL", "JWT Authentication", "Socket.io"]
+    },
+    {
+      "category": "Database",
+      "skills": ["MongoDB", "Mongoose", "Database Design", "Query Optimization", "Indexing"]
+    },
+    {
+      "category": "Data Structures & Algorithms",
+      "skills": ["Arrays & Strings", "Linked Lists", "Stacks & Queues", "Trees & Graphs", "Dynamic Programming", "Sorting & Searching"]
+    },
+    {
+      "category": "Tools & DevOps",
+      "skills": ["Git", "Docker", "AWS", "Heroku", "Postman", "Jest", "Webpack"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.",
+      "tech": ["React", "Node.js", "Express.js", "MongoDB", "Stripe", "Socket.io"],
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+      "icon": "🛒",
+      "link": "https://example-ecommerce.com",
+      "github": "https://github.com/yourusername/ecommerce-platform"
+    },
+    {
+      "title": "Real-time Chat Application",
+      "description": "Real-time messaging app with user authentication, file sharing, and group chat functionality.",
+      "tech": ["React", "Node.js", "Socket.io", "MongoDB", "JWT", "Multer"],
+      "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=300&fit=crop",
+      "icon": "💬",
+      "link": "https://example-chat.com",
+      "github": "https://github.com/yourusername/chat-app"
+    },
+    {
+      "title": "Task Management System",
+      "description": "Collaborative project management tool with real-time updates, task assignment, and progress tracking.",
+      "tech": ["React", "Express.js", "MongoDB", "Socket.io", "JWT", "React DnD"],
+      "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop",
+      "icon": "📋",
+      "link": "https://example-taskapp.com",
+      "github": "https://github.com/yourusername/task-management"
+    },
+    {
+      "title": "Social Media Dashboard",
+      "description": "Analytics dashboard for social media management with data visualization and reporting features.",
+      "tech": ["React", "Node.js", "MongoDB", "Chart.js", "REST API", "JWT"],
+      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop",
+      "icon": "📊",
+      "link": "https://example-dashboard.com",
+      "github": "https://github.com/yourusername/social-dashboard"
+    },
+    {
+      "title": "Weather Application",
+      "description": "Weather app with location-based forecasts, 7-day predictions, and interactive weather maps.",
+      "tech": ["React", "OpenWeather API", "Geolocation", "Chart.js", "CSS3"],
+      "image": "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=400&h=300&fit=crop",
+      "icon": "🌤️",
+      "link": "https://example-weather.com",
+      "github": "#"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "Modern, responsive portfolio website built with React and Tailwind CSS.",
+      "tech": ["React", "Tailwind CSS", "Vite", "Framer Motion", "Responsive Design"],
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
+      "icon": "🎨",
+      "link": "#",
+      "github": "https://github.com/yourusername/portfolio"
+    }
+  ],
+  "contact": {
+    "title": "Let's work together!",
+    "description": "I'm actively seeking opportunities in product-based startups where I can contribute to innovative solutions and grow with cutting-edge technologies. Despite being early in my career, I bring strong technical foundations and a passion for learning. Let's discuss how I can add value to your team!",
+    "info": [
+      {
+        "icon": "📧",
+        "label": "Email",
+        "value": "your.email@example.com"
+      },
+      {
+        "icon": "📱",
+        "label": "Phone",
+        "value": "+1 (555) 123-4567"
+      },
+      {
+        "icon": "📍",
+        "label": "Location",
+        "value": "Your City, Country"
+      }
+    ]
+  },
+  "social": {
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "twitter": "https://twitter.com/yourusername",
+    "instagram": "https://instagram.com/yourusername"
+  },
+  "socialIcons": {
+    "github": "🐙",
+    "linkedin": "💼",
+    "twitter": "🐦",
+    "instagram": "📷"
+  },
+  "footer": {
+    "text": "© 2024 Your Name. All rights reserved. Built with ❤️ using React & Tailwind CSS"
+  }
+}
