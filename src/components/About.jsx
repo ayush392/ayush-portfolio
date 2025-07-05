@@ -1,3 +1,14 @@
+import { FaReact, FaNodeJs, FaLock, FaCode } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+
+const iconsMap = {
+  react: <FaReact size={24} color="#61DAFB" />,
+  node: <FaNodeJs size={24} color="#68A063" />,
+  mongodb: <SiMongodb size={24} color="#47A248" />,
+  security: <FaLock size={24} color="#F87171" />,
+  code: <FaCode size={24} color="#A78BFA" />
+};
+
 function About({ portfolioData }) {
   return (
     <section id="about" className="py-20 px-4">
@@ -28,7 +39,7 @@ function About({ portfolioData }) {
               <div className="space-y-4">
                 {portfolioData.personal.services.map((service, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="text-2xl">{service.icon}</div>
+                    <div className="text-2xl mt-1.5">{iconsMap[service.icon]}</div>
                     <div>
                       <h4 className="text-white font-semibold">{service.title}</h4>
                       <p className="text-gray-400 text-sm">{service.description}</p>

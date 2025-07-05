@@ -1,3 +1,16 @@
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+
+const iconsMap = {
+  github: <FaGithub />,
+  linkedin: <FaLinkedin />,
+  leetcode: <SiLeetcode />,
+  twitter: <FaTwitter />,
+  email: <MdEmail />,
+  location: <MdLocationOn />
+}
+
 function Contact({ portfolioData }) {
   return (
     <section id="contact" className="py-20 px-4">
@@ -14,7 +27,7 @@ function Contact({ portfolioData }) {
             <div className="space-y-4">
               {portfolioData.contact.info.map((contact, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className="text-2xl">{contact.icon}</div>
+                  <div className="text-2xl text-gray-400">{iconsMap[contact.icon]}</div>
                   <div>
                     <div className="text-white font-semibold">{contact.label}</div>
                     <div className="text-gray-400">{contact.value}</div>
@@ -33,7 +46,7 @@ function Contact({ portfolioData }) {
                     rel="noopener noreferrer"
                     className="text-2xl text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer"
                   >
-                    {portfolioData.socialIcons[platform]}
+                    {iconsMap[platform]}
                   </a>
                 ))}
               </div>
@@ -46,7 +59,7 @@ function Contact({ portfolioData }) {
                 <input
                   type="text"
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 transition-colors"
-                  placeholder="Your name"
+                  placeholder="Your Name"
                 />
               </div>
               <div>
