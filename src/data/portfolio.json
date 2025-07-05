@@ -93,7 +93,7 @@
     },
     {
       "category": "Data Structures & Algorithms",
-      "skills": ["Arrays", "Linked Lists", "Trees", "Graphs", "Dynamic Programming", "Sorting & Searching"]
+      "skills": ["Arrays", "Linked Lists", "Trees", "Graphs", "Dynamic Programming", "Sorting", "Searching"]
     },
     {
       "category": "Tools",
@@ -146,8 +146,8 @@
   },
   "social": {
     "github": "https://github.com/ayush392",
-    "linkedin": "https://linkedin.com/in/yourusername",
-    "leetcode": "https://leetcode.com/yourusername",
-    "twitter": "https://x.com/yourusername"
+    "linkedin": "https://linkedin.com/in/ayush392",
+    "leetcode": "https://leetcode.com/u/ayush392/",
+    "twitter": "https://x.com/ayush_392"
   }
 }
