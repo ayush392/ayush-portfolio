@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import portfolioData from './data/portfolio.json'
+import LoadingScreen from './components/LoadingScreen'
 import {
   Navigation,
   Hero,
@@ -13,6 +15,7 @@ import {
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,21 +47,65 @@ function App() {
     }
   }
 
+  const handleLoadingComplete = () => {
+    setIsLoading(false)
+  }
+
+  const pageVariants = {
+    initial: {
+      opacity: 0,
+      y: 20
+    },
+    in: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    },
+    out: {
+      opacity: 0,
+      y: -20,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-900 to-slate-900">
-      <Navigation 
-        portfolioData={portfolioData} 
-        activeSection={activeSection} 
-        scrollToSection={scrollToSection} 
-      />
-      <Hero portfolioData={portfolioData} scrollToSection={scrollToSection} />
-      <About portfolioData={portfolioData} />
-      <Experience portfolioData={portfolioData} />
-      <Skills portfolioData={portfolioData} />
-      <Projects portfolioData={portfolioData} />
-      <Contact portfolioData={portfolioData} />
-      <Footer portfolioData={portfolioData} />
-    </div>
+    <>
+      <AnimatePresence mode="wait">
+        {isLoading && (
+          <LoadingScreen onLoadingComplete={handleLoadingComplete} />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence mode="wait">
+        {!isLoading && (
+          <motion.div 
+            className="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-900 to-slate-900"
+            variants={pageVariants}
+            initial="initial"
+            animate="in"
+            exit="out"
+          >
+            <Navigation 
+              portfolioData={portfolioData} 
+              activeSection={activeSection} 
+              scrollToSection={scrollToSection} 
+            />
+            <Hero portfolioData={portfolioData} scrollToSection={scrollToSection} />
+            <About portfolioData={portfolioData} />
+            <Experience portfolioData={portfolioData} />
+            <Skills portfolioData={portfolioData} />
+            <Projects portfolioData={portfolioData} />
+            <Contact portfolioData={portfolioData} />
+            <Footer />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   )
 }
 
