@@ -9,8 +9,13 @@ function Navigation({ portfolioData, activeSection, scrollToSection }) {
   }
 
   const handleNavClick = (sectionId) => {
-    scrollToSection(sectionId)
     setIsMenuOpen(false)
+    // If mobile menu is open, wait for it to close before scrolling
+    if (window.innerWidth < 768) {
+      setTimeout(() => scrollToSection(sectionId), 250)
+    } else {
+      scrollToSection(sectionId)
+    }
   }
 
   const navVariants = {
@@ -67,7 +72,7 @@ function Navigation({ portfolioData, activeSection, scrollToSection }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white">{portfolioData.personal.name}</h1>
+            <h1 className="text-2xl font-bold text-white cursor-pointer" onClick={() => scrollToSection('home')}>{portfolioData.personal.name}</h1>
           </div>
           
           {/* Desktop Navigation */}

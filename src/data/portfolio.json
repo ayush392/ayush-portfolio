@@ -59,9 +59,8 @@
       "description": "Developed a full-stack application using the MERN stack as part of internal technical training and contributed to enterprise-grade development practices.",
       "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "Git", "Agile"],
       "achievements": [
-        "Developed a MERN stack application during training",
-        "Practiced enterprise-grade workflows",
-        "Collaborated with cross-functional teams"
+        "Completed training and acquired hands-on experience building a full-stack MERN application.",
+        "Collaborated with a team of developers to deliver modular, maintainable code under tight timelines."
       ]
     },
     {
@@ -71,7 +70,7 @@
       "description": "Refactored backend architecture, implemented OTP authentication, and optimized API performance.",
       "technologies": ["Node.js", "Express.js", "React.js", "MongoDB", "JavaScript", "Git"],
       "achievements": [
-        "Refactored and optimized MongoDB schemas to support 5+ new features",
+        "Refactored and optimized MongoDB schemas to support new features",
         "Implemented OTP-based signup and JWT authentication",
         "Reduced redundant API calls by 10%",
         "Replaced Firebase with custom Node.js backend, reducing response time by 50ms"
